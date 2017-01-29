@@ -47,7 +47,7 @@ public class News extends HttpServlet {
 	}
 
 	private void getNews(HttpServletRequest request, HttpServletResponse rep, String id, String title) throws IOException, ParseException {
-		String url = "http://163.5.84.111:8443/v0.1/rss/"+id;
+		String url = "http://127.0.0.1:8443/v0.1/rss/"+id;
 
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();

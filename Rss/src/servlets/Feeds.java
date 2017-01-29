@@ -44,7 +44,7 @@ public class Feeds extends HttpServlet {
 	}
 
 	protected void getFeeds(HttpServletRequest request, HttpServletResponse rep) throws Exception {
-		String url = "http://163.5.84.111:8443/v0.1/rss/";
+		String url = "http://127.0.0.1:8443/v0.1/rss/";
 
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
